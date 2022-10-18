@@ -43,6 +43,6 @@ app.get("/",function(req,res){
 
 
 
-app.listen(process.env.PORT||2000,function(){
+app.listen(process.env.PORT,function(){
     console.log("running...");
 });
