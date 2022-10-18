@@ -9,6 +9,7 @@ app.get("/",function(req,res){
     res.sendFile(__dirname + "/test.html");
     
 });
+
  app.post("/",function(req,res){
      console.log(req.body.cityname);
      console.log(req.body.distance)
@@ -42,6 +43,6 @@ app.get("/",function(req,res){
 
 
 
-app.listen(2000,function(){
+app.listen(process.env.PORT||2000,function(){
     console.log("running...");
 });
